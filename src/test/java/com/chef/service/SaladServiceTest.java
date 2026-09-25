@@ -35,7 +35,7 @@ class SaladServiceTest {
     @BeforeEach
     void setUp() {
         realSalad = new Salad("Тестовий салат");
-        realSalad.addIngredient(new Tomato(20.0, 100.0, "Сливка")); // 20.0 ккал
+        realSalad.addIngredient(new Tomato(20.0, 100.0, "Чері")); // 20.0 ккал
         realSalad.addIngredient(new Cucumber(15.0, 200.0, 10.0));   // 30.0 ккал
         realSalad.addIngredient(new Carrot(40.0, 50.0, 5.0));       // 20.0 ккал
     }
