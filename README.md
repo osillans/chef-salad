@@ -31,17 +31,4 @@ src/
 │   └── Main.java        # Точка входу в програму
 └── test/java/com/chef/
     └── service/         # Тести (SaladServiceTest)
-
-## Збірка та запуск
-
-### Запуск модульних тестів
-
-mvn test
-
-### Компіляція класів
-
-javac -encoding UTF-8 -d target/classes src/main/java/com/chef/model/*.java src/main/java/com/chef/service/*.java src/main/java/com/chef/Main.java
-
-### Запуск програми
-
-java -cp target/classes com.chef.Maingit
+```
