@@ -10,9 +10,7 @@ import java.util.stream.Collectors;
 
 public class SaladService {
 
-    /**
-     * Рахує загальну калорійність усього салату.
-     */
+    // Загал. ккал. салату
     public double calculateTotalCalories(Salad salad) {
         if (salad == null) {
             throw new IllegalArgumentException("Салат не може бути null");
@@ -22,9 +20,7 @@ public class SaladService {
                 .sum();
     }
 
-    /**
-     * Сортує овочі в салаті за обраним параметром (наприклад, за вагою за спаданням).
-     */
+    // Сортування овочів за вагою за спад.
     public List<Vegetable> sortByWeightDescending(Salad salad) {
         if (salad == null) {
             throw new IllegalArgumentException("Салат не може бути null");
@@ -34,9 +30,7 @@ public class SaladService {
         return sorted;
     }
 
-    /**
-     * Сортує овочі за калорійністю на 100 г (за зростанням).
-     */
+    // Сортування за ккал
     public List<Vegetable> sortByCaloriesAscending(Salad salad) {
         if (salad == null) {
             throw new IllegalArgumentException("Салат не може бути null");
@@ -46,9 +40,7 @@ public class SaladService {
         return sorted;
     }
 
-    /**
-     * Знаходить овочі в салаті, калорійність яких (на 100 г) потрапляє в заданий діапазон.
-     */
+    // Овочі в заданому діапазоні
     public List<Vegetable> findByCaloriesRange(Salad salad, double minCalories, double maxCalories) {
         if (salad == null) {
             throw new IllegalArgumentException("Салат не може бути null");

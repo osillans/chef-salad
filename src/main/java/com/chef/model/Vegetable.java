@@ -2,15 +2,11 @@ package com.chef.model;
 
 import java.util.Objects;
 
-/**
- * Базовий абстрактний клас для всіх овочів у салаті.
- * Демонструє інкапсуляцію та абстракцію.
- */
 public abstract class Vegetable {
 
     private final String name;
-    private final double caloriesPer100g; // калорійність на 100 грамів
-    private final double weight;          // вага в грамах
+    private final double caloriesPer100g; // ккал на 100 г
+    private final double weight;          // вага в г
 
     public Vegetable(String name, double caloriesPer100g, double weight) {
         if (caloriesPer100g < 0 || weight <= 0) {
@@ -33,9 +29,6 @@ public abstract class Vegetable {
         return weight;
     }
 
-    /**
-     * Поліморфний розрахунок загальної калорійності конкретної порції овоча.
-     */
     public double getTotalCalories() {
         return (caloriesPer100g * weight) / 100.0;
     }

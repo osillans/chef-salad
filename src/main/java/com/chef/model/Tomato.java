@@ -2,7 +2,7 @@ package com.chef.model;
 
 public class Tomato extends Vegetable {
 
-    private final String variety; // наприклад: "Чері", "Сливка"
+    private final String variety; // "Чері", "Сливка"
 
     public Tomato(double caloriesPer100g, double weight, String variety) {
         super("Помідор (" + variety + ")", caloriesPer100g, weight);
