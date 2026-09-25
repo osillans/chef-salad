@@ -44,4 +44,4 @@ javac -encoding UTF-8 -d target/classes src/main/java/com/chef/model/*.java src/
 
 ### Запуск програми
 
-java -cp target/classes com.chef.Main
+java -cp target/classes com.chef.Maingit
