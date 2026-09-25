@@ -31,7 +31,7 @@ src/
 │   └── Main.java        # Точка входу в програму
 └── test/java/com/chef/
     └── service/         # Тести (SaladServiceTest)
-
+```
 ## Збірка та запуск
 
 ### Запуск модульних тестів
@@ -44,4 +44,4 @@ javac -encoding UTF-8 -d target/classes src/main/java/com/chef/model/*.java src/
 
 ### Запуск програми
 
-java -cp target/classes com.chef.Main
+java -cp target/classes com.chef.Main 
